@@ -1,0 +1,97 @@
+:root{--bg:#0e1011;--s1:#161a1b;--s2:#1e2325;--line:#2b3133;--tx:#ece8de;--mu:#8e9697;--ac:#7cc2a4;--on:#08130f;--gold:#d9aa52;--grn:#4aa077;color-scheme:dark;font-family:"Fira Sans","Segoe UI",system-ui,sans-serif}
+.xmas{--bg:#100d0e;--s1:#1a1315;--s2:#241a1d;--line:#3b2b2f;--ac:#b3263a;--on:#fff4ee}
+*{box-sizing:border-box;margin:0}
+[hidden]{display:none!important}
+body{background:#0e1011;color:var(--tx);font-size:15px;line-height:1.4}
+.app{min-height:100dvh;background:var(--bg);padding-left:200px}
+main{max-width:720px;margin:0 auto;padding:0 24px 48px}
+h1{font:500 25px/1.15 "Fira Code",Consolas,Menlo,monospace;margin:12px 0 18px}
+h2{font:500 20px "Fira Code",Consolas,Menlo,monospace}
+.star,.gold{color:var(--gold)}
+.mu{color:var(--mu);font-size:13px}
+.grow{flex:1;min-width:0}
+:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+button{font:inherit;color:inherit;cursor:pointer}
+.nav{position:fixed;inset:0 auto 0 0;width:200px;padding:24px 12px;display:flex;flex-direction:column;gap:4px;border-right:1px solid var(--line)}
+.logo{font:600 18px "Fira Code",Consolas,Menlo,monospace;padding:0 12px 20px}
+.logo i{font-style:normal;color:var(--ac)}
+.nav button{display:flex;gap:12px;align-items:center;padding:10px 12px;border-radius:10px;background:none;border:0;color:var(--mu)}
+.nav button.on{background:var(--s2);color:var(--tx)}
+.nav button.on svg{color:var(--ac)}
+.quick{position:sticky;top:0;z-index:4;display:flex;justify-content:flex-end;gap:8px;padding:14px 0 6px;background:var(--bg)}
+.btn{display:inline-flex;align-items:center;gap:6px;background:var(--ac);color:var(--on);border:0;border-radius:10px;padding:9px 14px;font-weight:600;font-size:14px}
+.btn.ghost{background:var(--s2);color:var(--tx)}
+.btn.danger{color:#e58a8a}
+.wide{width:100%;justify-content:center}
+.icon{background:none;border:0;color:var(--mu);padding:6px;display:grid}
+.row{display:flex;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}
+.date{width:46px;text-align:center;line-height:1.1}
+.date b{display:block;font:500 24px "Fira Code",Consolas,Menlo,monospace}
+.date small{color:var(--mu);font-size:12px}
+.date.xm b{color:var(--ac)}
+.flag{color:var(--gold);font-size:12px;text-align:right}
+.note{margin-top:18px;width:100%;text-align:left;background:var(--s1);border:1px solid var(--line);border-radius:12px;padding:12px 14px;color:var(--gold)}
+.av{width:38px;height:38px;border-radius:50%;background:var(--s2);display:grid;place-items:center;font-weight:600;font-size:13px;color:var(--ac)}
+.search,input,select,textarea{display:block;width:100%;background:var(--s2);border:1px solid var(--line);color:var(--tx);border-radius:10px;padding:10px;font:inherit}
+.search{margin-bottom:4px}
+.chips{display:flex;gap:6px;overflow-x:auto;padding:10px 0}
+.chip{white-space:nowrap;background:none;border:1px solid var(--line);color:var(--mu);border-radius:99px;padding:6px 12px;font-size:13px}
+.chip.on{background:var(--tx);color:var(--bg);border-color:var(--tx)}
+.grp{display:flex;justify-content:space-between;align-items:baseline;margin-top:22px;font-weight:600}
+.grp small{color:var(--mu);font-weight:400}
+.yr{font:500 18px "Fira Code",Consolas,Menlo,monospace;margin-top:26px;color:var(--gold)}
+.name{background:none;border:0;text-align:left;padding:0}
+.st{min-width:86px;background:none;border:1px solid var(--line);color:var(--mu);border-radius:99px;padding:4px 10px;font-size:12px}
+.s-escolhido{color:var(--gold);border-color:#5d4c27}
+.s-comprado{color:var(--grn);border-color:#2b5d45}
+.s-entregue{background:var(--grn);color:#06140d;border-color:var(--grn)}
+.pr{width:8px;height:8px;border-radius:50%;background:var(--line)}
+.p-media{background:#6d7577}
+.p-alta{background:var(--ac)}
+.price{font-family:"Fira Code",Consolas,monospace;font-size:13px;min-width:56px;text-align:right;font-variant-numeric:tabular-nums;color:var(--mu)}
+.empty{padding:28px 0;text-align:center}
+.bar{height:6px;border-radius:9px;background:var(--s2);overflow:hidden;margin-bottom:10px}
+.bar i{display:block;height:100%;background:var(--gold)}
+.over .bar i{background:#d4504f}
+.veil{position:fixed;inset:0;background:#000b;display:flex;align-items:flex-end;justify-content:center;z-index:10}
+.sheet{background:var(--s1);width:100%;max-width:440px;border-radius:18px 18px 0 0;padding:20px;max-height:92dvh;overflow:auto}
+.sheet header{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+label{display:block;font-size:13px;color:var(--mu);margin-bottom:12px}
+label input,label select,label textarea{margin-top:4px;color:var(--tx);font-size:15px}
+summary{cursor:pointer;color:var(--mu);font-size:13px;margin-bottom:12px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.row2.gap{margin-top:14px}
+.toast{position:fixed;left:50%;bottom:92px;transform:translateX(-50%);background:var(--tx);color:var(--bg);padding:8px 16px;border-radius:99px;font-size:13px;z-index:20}
+@media(min-width:820px){.veil{align-items:center}.sheet{border-radius:18px}.toast{bottom:32px}}
+@media(max-width:819px){
+  .app{padding:0 0 76px}
+  .nav{inset:auto 0 0 0;width:auto;flex-direction:row;padding:6px 6px calc(6px + env(safe-area-inset-bottom));border:0;border-top:1px solid var(--line);background:var(--s1);z-index:5}
+  .logo{display:none}
+  .nav button{flex:1;flex-direction:column;gap:2px;font-size:11px;padding:6px 4px}
+  main{padding:0 16px 32px}
+}
+
+.hero{margin-top:14px;padding:26px 14px 18px;text-align:center;border-radius:18px;border:1px solid #6b5527;background:radial-gradient(120% 90% at 50% 0,#5a1420,#2a0b11 72%)}
+.hero h1{margin:0 0 2px}
+.hero p{color:#d9c58f}
+.count{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:20px}
+.count div{padding:14px 4px;border:1px solid #6b5527;border-radius:12px;background:#1d070b99}
+.count b{display:block;font:500 clamp(26px,8vw,48px)/1 "Fira Code",Consolas,monospace;color:#f3e6c4;font-variant-numeric:tabular-nums}
+.count small{color:var(--gold);font-size:12px}
+.budget{margin-top:14px;padding:16px;border:1px solid #5d4c27;border-radius:16px;background:var(--s1)}
+.budget .top{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin-bottom:12px}
+.budget small{display:block;color:var(--mu);font-size:12px}
+.budget .big{font:500 clamp(28px,7vw,38px)/1.1 "Fira Code",Consolas,monospace;color:var(--gold)}
+.budget input{display:inline-block;width:84px;margin:0 4px;padding:5px 8px}
+.over .big{color:#e0605e}
+.stats{display:flex;justify-content:space-between;gap:8px;font-size:12px;color:var(--mu)}
+.stats b{display:block;margin-top:2px;color:var(--tx);font:500 14px "Fira Code",Consolas,monospace}
+.person{margin-top:22px;padding:2px 16px 12px;border:1px solid var(--line);border-radius:16px;background:var(--s1)}
+.person header{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.pick{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid var(--line);color:var(--mu)}
+.pick.on{color:var(--tx)}
+.box{flex:none;width:24px;height:24px;padding:0;display:grid;place-items:center;border-radius:7px;border:1.5px solid #6d7577;background:none;color:#06140d}
+.on .box{background:var(--grn);border-color:var(--grn)}
+.box:disabled{cursor:default}
+.add{display:flex;align-items:center;gap:6px;margin-top:10px;padding:4px 0;background:none;border:0;color:var(--mu);font-size:13px}
+.add:hover{color:var(--tx)}
